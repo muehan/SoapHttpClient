@@ -82,12 +82,20 @@ namespace SoapHttpClient
 
         private static XElement GetEnvelope(SoapMessageConfiguration soapMessageConfiguration)
         {
+            XNamespace tem = XNamespace.Get("http://tempuri.org/");
+            XNamespace hel = XNamespace.Get("http://schemas.datacontract.org/2004/07/Helpline.BusinessLayer");
+            XNamespace hel1 = XNamespace.Get("http://schemas.datacontract.org/2004/07/Helpline.Activities.InterfaceScope");
+
             return new
                 XElement(
                     soapMessageConfiguration.Schema + "Envelope",
                     new XAttribute(
                         XNamespace.Xmlns + "soapenv",
-                        soapMessageConfiguration.Schema.NamespaceName));
+                        soapMessageConfiguration.Schema.NamespaceName),
+                    new XAttribute(XNamespace.Xmlns + "tem", tem),
+                    new XAttribute(XNamespace.Xmlns + "hel", hel),
+                    new XAttribute(XNamespace.Xmlns + "hel1", hel1)
+                    );
         }
 
         private static IHttpClientFactory DefaultHttpClientFactory()

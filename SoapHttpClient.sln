@@ -1,6 +1,7 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.12
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AAFFAF89-5391-4C5B-B245-90B4C9946A2A}"
 EndProject
@@ -11,21 +12,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapHttpClient.Tests", "Tests\SoapHttpClient.Tests\SoapHttpClient.Tests.csproj", "{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoapHttpClient.Tests", "Tests\SoapHttpClient.Tests\SoapHttpClient.Tests.csproj", "{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapHttpClient", "Source\SoapHttpClient\SoapHttpClient.csproj", "{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoapHttpClient", "Source\SoapHttpClient\SoapHttpClient.csproj", "{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3} = {AAFFAF89-5391-4C5B-B245-90B4C9946A2A}
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF218B52-C837-4C40-B54C-B6F38CFE3EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BAFDAD8A-BADB-4CDB-926E-A141B092CBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE0795FF-25BA-42BA-80EB-87923164E19A}
 	EndGlobalSection
 EndGlobal
